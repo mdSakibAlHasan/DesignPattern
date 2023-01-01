@@ -16,6 +16,6 @@ public class PrintJob {
 
     public void changePriority()
     {
-        
+
     }
 }
