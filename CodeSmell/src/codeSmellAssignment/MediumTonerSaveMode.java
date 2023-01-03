@@ -1,8 +1,8 @@
 package codeSmellAssignment;
 
-public class MediumTonerSaveMode implements PrintMode{
+public class MediumTonerSaveMode extends PrintMode{
     @Override
-    public void printAlgorithm() {
+    public void printerAlgorithm() {
         //algorithm
     }
 }

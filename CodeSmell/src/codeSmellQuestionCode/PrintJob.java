@@ -7,7 +7,8 @@ import codeSmellAssignment.MediumTonerSaveMode;
 import java.util.Queue;
 
 public class PrintJob {
-    //Large class code smell
+    //Feature envey
+    //long class
     //extract class
     HighTonerSaveMode highTonerSaveMode = new HighTonerSaveMode();
     LowTonerSaveMode lowTonerSaveMode = new LowTonerSaveMode();
@@ -19,6 +20,7 @@ public class PrintJob {
 
     }
 
+    //feature envey
     public void changePriority()
     {
 

@@ -1,8 +1,8 @@
 package codeSmellAssignment;
 
-public class HighTonerSaveMode implements PrintMode{
+public class HighTonerSaveMode extends PrintMode{
     @Override
-    public void printAlgorithm() {
+    public void printerAlgorithm() {
         //Here is a algorithm to reduce tenor
     }
 }

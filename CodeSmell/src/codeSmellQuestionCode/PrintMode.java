@@ -1,6 +1,6 @@
 package codeSmellQuestionCode;
 
-public interface PrintModee {
+public abstract class PrintMode {
     public static String tonerSavingLevel="";
     public abstract void saveTanor();       //
     public abstract void savePage();

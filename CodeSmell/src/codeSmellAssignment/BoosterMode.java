@@ -1,8 +1,8 @@
 package codeSmellAssignment;
 
-public class BoosterMode implements PrintMode{
+public class BoosterMode extends PrintMode{
     @Override
-    public void printAlgorithm() {
+    public void printerAlgorithm() {
         //booster algorithm
     }
 

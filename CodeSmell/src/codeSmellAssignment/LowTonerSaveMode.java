@@ -1,8 +1,8 @@
 package codeSmellAssignment;
 
-public class LowTonerSaveMode implements PrintMode{
+public class LowTonerSaveMode extends PrintMode{
     @Override
-    public void printAlgorithm() {
+    public void printerAlgorithm() {
         //algorithm
     }
 }

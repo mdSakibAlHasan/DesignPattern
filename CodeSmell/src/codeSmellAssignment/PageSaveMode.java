@@ -1,8 +1,13 @@
 package codeSmellAssignment;
 
-public class PageSaveMode implements PrintMode{
+public class PageSaveMode extends PrintMode{
     @Override
-    public void printAlgorithm() {
+    public void printerAlgorithm() {
         //algorithm to save oage
+    }
+
+    public void renderPreview()
+    {
+
     }
 }

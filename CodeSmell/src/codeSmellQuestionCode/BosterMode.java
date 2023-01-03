@@ -1,6 +1,6 @@
 package codeSmellQuestionCode;
 
-public class BosterMode implements PrintModee{
+public class BosterMode extends PrintMode{
     //Refused Bequest code smell
     //solution: Push Down Methon
     @Override
