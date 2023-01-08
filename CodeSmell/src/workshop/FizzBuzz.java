@@ -8,7 +8,7 @@ package workshop;
  */
 public class FizzBuzz {
     public static String stringCatagory(int number) {       //inappropriate naming
-        String strReturn = null;
+        String strReturn = null;                            //duplicate code
 
         if (isDivideable(number, 15)) {
             return "FizzBuzz";
