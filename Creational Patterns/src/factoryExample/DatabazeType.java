@@ -1,5 +1,5 @@
 package factoryExample;
 
 public enum DatabazeType {
-    MYSQL,ORACLE;
+    MYSQL,ORACLE,MONGO;
 }
