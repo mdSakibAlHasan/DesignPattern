@@ -1,6 +1,6 @@
 package refactoryMethod;
 
-public class Maze {
+public class Maze {     //add room an returm room number
 
     public Maze() {
         // Constructor implementation

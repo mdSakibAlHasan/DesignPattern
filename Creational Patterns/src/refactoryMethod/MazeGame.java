@@ -1,6 +1,6 @@
 package refactoryMethod;
 
-public class MazeGame {
+public class MazeGame {     //create two room within confort
     public static Maze createMaze() {
         Maze aMaze = new Maze();
         Room r1 = new Room(1);
