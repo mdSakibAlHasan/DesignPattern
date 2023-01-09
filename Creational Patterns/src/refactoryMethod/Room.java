@@ -1,17 +1,24 @@
 package refactoryMethod;
 
-public class Room {
-    public Room(int n)
-    {
-
+public class Room extends MapSite{
+    private MapSite[] sides = new MapSite[4];
+    private int roomNumber;
+    public Room(int roomNo) {
+        roomNumber = roomNo;
     }
 
-    public void setSide(String north, Wall makeWall) {
+    public MapSite getSide(Direction direction) {
+        return sides[direction.ordinal()];
     }
 
-    public void setSide(String str1, String str2)
-    {
-
+    public void setSide(Direction direction, MapSite site) {
+        sides[direction.ordinal()] = site;
     }
+
+    public void enter() {
+        // Implementation of Enter method
+    }
+
+
 
 }

@@ -1,45 +1,21 @@
 package refactoryMethod;
 
 public class MazeGame {
-
-
-    public Maze createMaze()
-    {
-        Maze maze = new Maze();
-
-        Room r1 = MakeRoom (1);
-        Room r2 = MakeRoom(2);
-        Door theDoor = MakeDoor(r1, r2);
-        maze.addRoom(r1);
-        maze.addRoom(r2);
-
-        r1.setSide("North", MakeWall());
-        r1.setSide("East", "theDoor");
-        r1.setSide("South", MakeWall());
-        r1.setSide("West", MakeWall());
-        r2.setSide("North", MakeWall());
-        r2.setSide("East", MakeWall());
-        r2.setSide("South", MakeWall());
-        r2.setSide("West", "theDoor");
-
-        return maze;
+    public static Maze createMaze() {
+        Maze aMaze = new Maze();
+        Room r1 = new Room(1);
+        Room r2 = new Room(2);
+        Door theDoor = new Door(r1, r2);
+        aMaze.addRoom(r1);
+        aMaze.addRoom(r2);
+        r1.setSide(Direction.NORTH, new Wall());
+        r1.setSide(Direction.EAST, theDoor);
+        r1.setSide(Direction.SOUTH, new Wall());
+        r1.setSide(Direction.WEST, new Wall());
+        r2.setSide(Direction.NORTH, new Wall());
+        r2.setSide(Direction.EAST, new Wall());
+        r2.setSide(Direction.SOUTH, new Wall());
+        r2.setSide(Direction.WEST, theDoor);
+        return aMaze;
     }
-
-    public Maze MakeMaze()
-    {
-        return new Maze();
-    }
-    public Room MakeRoom(int n)
-    {
-        return new Room(n);
-    }
-    public Wall MakeWall()
-    {
-        return new Wall();
-    }
-    public Door MakeDoor(Room rl, Room r2)
-    {
-        return new Door(rl, r2);
-    }
-
 }

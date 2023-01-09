@@ -2,16 +2,17 @@ package refactoryMethod;
 
 public class Maze {
 
-    public void addRoom(Room r)
-    {
-
+    public Maze() {
+        // Constructor implementation
     }
 
-    public void setSide(String str, Maze maze)
-    {
-
+    public void addRoom(Room room) {
+        // Implementation for adding a room to the maze
     }
 
-
+    public Room roomNo(int roomNumber) {
+        // Implementation for getting a room by its number
+        return null;
+    }
 
 }
