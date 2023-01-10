@@ -9,7 +9,7 @@ public class DatabazeFactory {
                 return new MySql();
             case ORACLE:
                 return new Oracle();
-            case MONGO:
+            case MONGODB:
                 return new MongoDB();
             default:
                 return null;

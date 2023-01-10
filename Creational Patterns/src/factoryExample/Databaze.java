@@ -1,26 +1,37 @@
 package factoryExample;
 
-public class Databaze {
-    String driverName, userName;
+import singleton.DatabazeConnection;
 
-    public String getDriverName() {
-        return driverName;
+public abstract class Databaze {
+    String databazeName, userName;
+    public Databaze()
+    {
     }
-
-    public void setDriverName(String driverName){
-        this.driverName = driverName;
-    }
-
-    public String getUserName(){
-        return userName;
-    }
-
-    public void setUserName(String userName){
+    public void setUserName(String userName)
+    {
         this.userName = userName;
     }
 
+    public void setDatabazeName(String databazeName)
+    {
+        this.databazeName = databazeName;
+    }
+
+    public String getUserName()
+    {
+        return userName;
+    }
+
+    public String getDatabazeName()
+    {
+        return databazeName;
+    }
+
     public void showConnectionDetails(){
-        System.out.println("Driver name : "+getDriverName());
+        System.out.println("Databaze name : "+getDatabazeName());
         System.out.println("User name : "+getUserName());
     }
+
+
+    public abstract void connectionEstablish();
 }

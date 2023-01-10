@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Press 1 for Oracle");
-        System.out.println("Press 2 for MySql");
-        System.out.println("press 3 for MongoDB");
+        System.out.println("Press 1 for Oracle connection");
+        System.out.println("Press 2 for MySql connection");
+        System.out.println("press 3 for MongoDB connection");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 

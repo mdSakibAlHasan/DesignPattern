@@ -1,8 +1,14 @@
 package factoryExample;
 
-public class Oracle extends Databaze{
-    public Oracle(){
-        setDriverName("oracle.jdbc.driver.OracleDriver");
-        setUserName("oracle@123");
+public class Oracle extends Databaze {
+
+    public Oracle()
+    {
+        setDatabazeName("Oracle");
+        setUserName("sakib");
+    }
+    @Override
+    public void connectionEstablish() {
+
     }
 }
