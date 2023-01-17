@@ -16,6 +16,11 @@ public class CountingMazeBuilder extends MazeBuilder{
         counts[0] = _doors;
         counts[1] = _rooms;
     }
+
+    public void getCounts(int room,int door){
+        _doors = door;
+        _rooms = door;
+    }
     private int _doors;
     private int _rooms;
 }

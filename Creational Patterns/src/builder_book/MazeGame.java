@@ -8,4 +8,14 @@ public class MazeGame {
         builder.buildDoor(1, 2);
         return builder.getMaze();
     }
+
+    //Maze MazeGame.
+
+    Maze createComplexMaze(MazeBuilder builder) {
+        builder.buildRoom(1);
+        // . . .
+        builder.buildRoom(1001);
+        return builder.getMaze();
+    }
+
 }

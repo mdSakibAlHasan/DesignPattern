@@ -4,6 +4,7 @@ import javax.xml.crypto.Data;
 
 public class DatabazeConnection {
     public static DatabazeConnection connection;
+    public String value;
 
     private DatabazeConnection(){
         //private not access
@@ -16,14 +17,22 @@ public class DatabazeConnection {
         return connection;
     }
 
-    public  void setConnection()
-    {
-        System.out.println("Connection Establish");
+    public void setValue(String value) {
+        this.value = value;
     }
 
+    public String getValue() {
+        return value;
+    }
+
+
     public static void main(String[] args) {
-        DatabazeConnection instance;
-        instance = DatabazeConnection.getConnection();
-        instance.setConnection();
+        DatabazeConnection instance1,instance2;
+        instance1 = DatabazeConnection.getConnection();
+        instance1.setValue("Oracle");
+
+        instance2 = DatabazeConnection.getConnection();
+        System.out.println("Connection establish: "+instance2.getValue());
+
     }
 }
