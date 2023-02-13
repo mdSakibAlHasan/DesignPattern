@@ -5,13 +5,19 @@ package constants;
  */
 public class constants {
 
-    public static String VERSION = "v0.3.1";
+    //Constant class are not needed to create multiple object.
+    //we use here singleton patttern
 
-    static String ROOT_PATH = ".";
-    public static String DATA_XML_PATH = ROOT_PATH + "\\minidb.xml";
-    public static String DB_DIR_PATH = ROOT_PATH + "\\db";
+    private constants(){
 
-    public static String HEADING = "\n\n" +
+    }
+
+    public String VERSION = "v0.3.1";
+    String ROOT_PATH = ".";
+    public String DATA_XML_PATH = ROOT_PATH + "\\minidb.xml";
+    public String DB_DIR_PATH = ROOT_PATH + "\\db";
+
+    public String HEADING = "\n\n" +
             "╔═══════════════════════════════════════════════════╗\n" +
             "║                 Welcome to MiniDB                 ║\n" +
             "║                      " + VERSION + "                       ║\n" +
@@ -20,19 +26,20 @@ public class constants {
             "╚═══════════════════════════════════════════════════╝\n" +
             "Enter the Commands: (Use 'exit;' to exit the cli)";
 
-    public static String CMD_PREFIX = "\n\u001B[31m>\u001B[0m ";
+    public String CMD_PREFIX = "\n\u001B[31m>\u001B[0m ";
 
     //Alternative for those CLIs that cannot read UTF-8
-    public static String HEADINGx = "\n\n" +
+    public String HEADINGx = "\n\n" +
             "---------- Welcome to MiniDB ----------\n" +
             "---------------- " + VERSION + " ---------------\n" +
             "----------- Made by Chanakya ----------\n" +
             "Source: https://github.com/U-C-S/MiniDB\n\n" +
             "Enter the Commands: (Use 'exit;' to exit the cli)";
 
-    public static String CMD_PREFIXx = "\n> ";
+    public String CMD_PREFIXx = "\n> ";
+    public String NO_DATABASE_SELECTED = "You need to select a database first with `use` command";
 
-    public static final String HELP_COMMANDS = "\n" +
+    public final String HELP_COMMANDS = "\n" +
             "Commands:\n" +
             "  exit;           - Exits the program\n" +
             "  help            - Prints this menu\n" +
@@ -44,5 +51,14 @@ public class constants {
             "  add <data>      - Inserts data (MUST FOLLOW SCHEMA)\n" +
             "  read ?<id>      - Shows the data in the database. id is optional\n" +
             "  delete <table>  - Deletes a row\n";
+
+    public static constants constants_object;
+    public static constants getInstance(){
+        if (constants_object == null){
+            constants_object = new constants();
+        }
+
+        return constants_object;
+    }
 
 }

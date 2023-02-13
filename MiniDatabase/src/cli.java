@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 import minidb.xmlParser.DatabaseFile;
 import minidb.xmlParser.RegistryFile;
 import minidb.xmlParser.*;
@@ -24,6 +26,7 @@ public class cli {
      * instantly load the registry file.
      */
     static RegistryFile registry;
+    static constants.constants constants_object = constants.constants.getInstance();
 
     /**
      * This attribute is for storing the DatabaseFile instance. Which is assigned
@@ -33,13 +36,13 @@ public class cli {
     static DatabaseFile CurrentDb;
 
     public static void main(String[] args) {
-        print(constants.constants.HEADING);
+        print(constants_object.HEADING);
 
-        registry = new RegistryFile(constants.constants.DATA_XML_PATH);
+        registry = new RegistryFile(constants_object.DATA_XML_PATH);
         Scanner input = new Scanner(System.in);
 
         while (true) {
-            System.out.print(constants.constants.CMD_PREFIX);
+            System.out.print(constants_object.CMD_PREFIX);
 
             String currentCmd = input.nextLine();
 
@@ -81,12 +84,12 @@ public class cli {
             }
 
             case "list": {
-                registry.listAllDatabases();
+                registry.checkDatabase(null);
                 break;
             }
 
             case "help;": {
-                print(constants.constants.HELP_COMMANDS);
+                print(constants_object.HELP_COMMANDS);
                 break;
             }
 
@@ -111,7 +114,7 @@ public class cli {
                     }
 
                 } else {
-                    print(constants.errors.NO_DATABASE_SELECTED);
+                    print(constants_object.NO_DATABASE_SELECTED);
                 }
                 break;
             }
@@ -120,7 +123,7 @@ public class cli {
                 if (CurrentDb != null) {
                     CurrentDb.addData(cmdArgs[1]);
                 } else {
-                    print(constants.errors.NO_DATABASE_SELECTED);
+                    print(constants_object.NO_DATABASE_SELECTED);
                 }
 
                 break;
@@ -131,10 +134,10 @@ public class cli {
                     if (cmdArgs.length == 1) {
                         CurrentDb.readData();
                     } else {
-                        CurrentDb.readData(cmdArgs[1]);
+                        CurrentDb.readData(cmdArgs[1],true);
                     }
                 } else {
-                    print(constants.errors.NO_DATABASE_SELECTED);
+                    print(constants_object.NO_DATABASE_SELECTED);
                 }
 
                 break;
@@ -154,9 +157,9 @@ public class cli {
 
             case "delete": {
                 if (CurrentDb != null) {
-                    CurrentDb.deleteData(cmdArgs[1]);
+                    CurrentDb.readData(cmdArgs[1],false);
                 } else {
-                    print(constants.errors.NO_DATABASE_SELECTED);
+                    print(constants_object.NO_DATABASE_SELECTED);
                 }
                 break;
             }
