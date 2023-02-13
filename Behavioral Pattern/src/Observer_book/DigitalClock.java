@@ -24,8 +24,12 @@ public class DigitalClock  implements Observer {
 
     public static void main(String[] args) {
         ClockTimer clockTimer = new ClockTimer();
+<<<<<<< HEAD
         new DigitalClock(clockTimer);
         new DigitalClock(clockTimer);
+=======
+        DigitalClock digitalClock = new DigitalClock(clockTimer);
+>>>>>>> cf5c50f034d2dbdec8b0cc53e9c87aed64c17cea
 
         while (true) {
             clockTimer.tick();
