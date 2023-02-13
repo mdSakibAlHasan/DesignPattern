@@ -1,8 +1,14 @@
-package factoryPatternBook;
+package factoryMethodBook;
 
-interface Metal{}
-class SS implements Metal{}
-class Raw implements Metal{}
+interface Metal{
+
+}
+class SS implements Metal{
+    //for vip building
+}
+class Raw implements Metal{
+    //for school
+}
 
 abstract class Building {
     void makeFloor(){

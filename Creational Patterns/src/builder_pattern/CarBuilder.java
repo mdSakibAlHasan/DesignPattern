@@ -30,4 +30,11 @@ public class CarBuilder {
         return new Car(id,brand,model,color);
     }
 
+    public static void main(String[] args) {
+
+        CarBuilder carBuilder = new CarBuilder().brand("hasib").model("as");
+        Car car = carBuilder.build();
+        System.out.println(car.toString());
+    }
+
 }

@@ -1,4 +1,4 @@
-package factoryPatternBook;
+package factoryMethodBook;
 
 public class MySqlConnection implements Connection{
     @Override

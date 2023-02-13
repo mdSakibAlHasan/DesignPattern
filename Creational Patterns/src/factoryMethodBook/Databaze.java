@@ -1,4 +1,4 @@
-package factoryPatternBook;
+package factoryMethodBook;
 
 public abstract class Databaze {
     public String database_name;

@@ -19,7 +19,7 @@ public class SingleObject {
 
     public void showMessage()
     {
-        System.out.println("Hellow this is a singleton class");
+        System.out.println("Hello this is a singleton class");
     }
 }
 

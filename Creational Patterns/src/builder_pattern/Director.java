@@ -7,9 +7,8 @@ public class Director {
     of the product we are building
      */
 
-    public void buildBugatti(CarBuilder builder){
-        builder.brand("butali")
-                .color("blue").build();
+    public void buildFarary(CarBuilder builder){
+        builder.brand("butali").build();
 
     }
 
@@ -18,8 +17,11 @@ public class Director {
     }
 
     public static void main(String[] args) {
-        Director director = new Director();
+       // Director director = new Director();
         CarBuilder builder = new CarBuilder();
-        director.buildBugatti(builder);
+        //director.buildFarary(builder);
+      Car car =  builder.brand("ferary").color("blue").id(67).build();
+        System.out.println(car.toString());
+
     }
 }

@@ -12,4 +12,9 @@ public class Car {
         this.model = model;
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return brand+" "+color+" "+model+" "+id;
+    }
 }
