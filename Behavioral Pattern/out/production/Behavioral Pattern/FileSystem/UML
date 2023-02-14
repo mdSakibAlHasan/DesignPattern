@@ -1,0 +1,94 @@
+         +----------+                         +------------+
+         |  Subject |<>---------------------> |  Observer  |
+         +----------+                         +------------+
+         |  observers: List<Observer>        |            |
+         | +registerObserver(observer: Observer) |        |
+         | +unregisterObserver(observer: Observer) |      |
+         | +notifyObservers()                |            |
+         +----------+                         +------------+
+                 ^
+                 |
+            +-----------+
+            |FileSubject|
+            +-----------+
+            | +watchedFile: File             |
+            | +run() : void                  |
+            | +notifyObservers() : void      |
+            +-----------+
+                 ^
+                 |
+            +-----------+
+            |  Observer |
+            +-----------+
+            | +update(file: File) : void     |
+            +-----------+
+                    ^
+                    |
+            +----------------+
+            |FileMonitorObserver|
+            +----------------+
+            | +name: String          |
+            | +update(file: File) : void |
+            +----------------+
+
+
+//////code 
+public abstract class FileSubject {
+    private List<FileObserver> observers = new ArrayList<FileObserver>();
+    private String filePath;
+    
+    public FileSubject(String filePath) {
+        this.filePath = filePath;
+    }
+    
+    public void registerObserver(FileObserver observer) {
+        observers.add(observer);
+    }
+    
+    public void unregisterObserver(FileObserver observer) {
+        observers.remove(observer);
+    }
+    
+    public void notifyObservers(FileEvent event) {
+        for (FileObserver observer : observers) {
+            observer.update(event);
+        }
+    }
+    
+    public String getFilePath() {
+        return filePath;
+    }
+    
+    public abstract void startMonitoring();
+}
+public class ConcreteFileSubject extends FileSubject {
+    private Path filePath;
+    private WatchService watchService;
+    
+    public ConcreteFileSubject(String filePath) throws IOException {
+        super(filePath);
+        this.filePath = Paths.get(filePath);
+        this.watchService = FileSystems.getDefault().newWatchService();
+    }
+    
+    @Override
+    public void startMonitoring() {
+        try {
+            WatchKey key = filePath.register(watchService, StandardWatchEventKinds.ENTRY_CREATE,
+                                               StandardWatchEventKinds.ENTRY_DELETE,
+                                               StandardWatchEventKinds.ENTRY_MODIFY);
+            while (true) {
+                for (WatchEvent<?> event : key.pollEvents()) {
+                    if (event.kind() == StandardWatchEventKinds.OVERFLOW) {
+                        continue;
+                    }
+                    FileEvent fileEvent = new FileEvent(getFilePath(), event.kind().name(), LocalDateTime.now());
+                    notifyObservers(fileEvent);
+                }
+                key.reset();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
