@@ -15,13 +15,16 @@ import constants.constants;
  * A abstract class with specfic set of methods to avoid repitition of code.
  */
 public abstract class XMLFiles {
+    //refused bequest problem
+    //solution: push-down method
     protected File xmlFile;
     protected Document doc;
+    static constants constants_object = constants.getInstance();
 
     public XMLFiles(String path) {
         try {
             xmlFile = new File(path);
-            new File(constants.DB_DIR_PATH).mkdir(); // create `db` directory if it doesn't exist
+            new File(constants_object.DB_DIR_PATH).mkdir(); // create `db` directory if it doesn't exist
             boolean NoFileFound = xmlFile.createNewFile();
             load(NoFileFound);
         } catch (ParserConfigurationException | SAXException | IOException err) {

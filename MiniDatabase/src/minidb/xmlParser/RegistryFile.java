@@ -5,6 +5,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 import javax.xml.parsers.*;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
 import org.w3c.dom.*;
 import constants.constants;
 
@@ -12,11 +19,16 @@ import constants.constants;
  * Contains the methods for performing CRUD operations on the registry file
  * 'minidb.xml'
  */
-public class RegistryFile extends XMLFiles {
+public class RegistryFile {
+
+    static constants constants_object = constants.getInstance();
+    private File xmlFile;
+    private Document doc;
 
     public RegistryFile(String path) {
-        super(path);
+        xmlFile = new File(path);
     }
+
 
     void createFile() {
         Element rootElem = doc.createElement("root");
@@ -30,6 +42,25 @@ public class RegistryFile extends XMLFiles {
 
         System.out.println("Intialized: " + xmlFile.getPath());
     }
+
+
+    protected void updateFile() {
+        try {
+            Transformer transformer = TransformerFactory.newInstance().newTransformer();
+            transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+            transformer.setOutputProperty(OutputKeys.INDENT, "no");
+            transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+
+            DOMSource source = new DOMSource(this.doc);
+            StreamResult result = new StreamResult(this.xmlFile);
+            transformer.transform(source, result);
+            System.out.println("Updated;");
+
+        } catch (TransformerException err) {
+            err.printStackTrace();
+        }
+    }
+
 
     /**
      *
@@ -92,15 +123,17 @@ public class RegistryFile extends XMLFiles {
     /**
      * To list all the created databases in the register
      */
-    public void listAllDatabases() {
-        NodeList list = this.doc.getElementsByTagName("name");
+    //duplicate code
 
-        for (int i = 0; i < list.getLength(); i++) {
-            Node dbNode = list.item(i);
-            String name = dbNode.getTextContent();
-            System.out.println(i + ". " + name);
-        }
-    }
+//    public void listAllDatabases() {
+//        NodeList list = this.doc.getElementsByTagName("name");
+//
+//        for (int i = 0; i < list.getLength(); i++) {
+//            Node dbNode = list.item(i);
+//            String name = dbNode.getTextContent();
+//            System.out.println(i + ". " + name);
+//        }
+//    }
 
     /**
      * Checks if the database name already exists in the register
@@ -115,7 +148,8 @@ public class RegistryFile extends XMLFiles {
         for (int i = 0; i < list.getLength(); i++) {
             Node dbNode = list.item(i);
             String dbName = dbNode.getTextContent();
-            // System.out.println(dbName + " " + name);
+            if(name == null)
+                System.out.println(dbName + " " + name);
             if (Objects.equals(dbName, name)) {
                 x = i;
             }
@@ -138,10 +172,10 @@ public class RegistryFile extends XMLFiles {
      */
     public String getDatabasePath(String name, boolean create) {
         if (create) {
-            return constants.DB_DIR_PATH + "\\" + name + ".xml";
+            return constants_object.DB_DIR_PATH + "\\" + name + ".xml";
         } else {
             if (isDatabaseExists(name)) {
-                return constants.DB_DIR_PATH + "\\" + name + ".xml";
+                return constants_object.DB_DIR_PATH + "\\" + name + ".xml";
             } else {
                 return null;
             }
@@ -161,10 +195,10 @@ public class RegistryFile extends XMLFiles {
 
             File f = new File(dbPath);
             f.delete();
-            print("Database deleted");
+            System.out.println("Database deleted");
 
         } else {
-            print("Database does not exist");
+            System.out.println("Database does not exist");
         }
     }
 }

@@ -1,0 +1,1653 @@
+I am sakib al hasan.
+who are you?
+whic is called.
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System.out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
+package FileSystem;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileChecker extends Subject {
+    private String path;
+    private File file;
+    private boolean fileModified,fileDeleted;
+    private Date date;
+    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+//    System.out.println(formatter.format(date));
+    private double originalFileSize=0;
+
+
+    public FileChecker(String path) {
+        this.path = path;
+    }
+
+    public String getDate() {
+        date = new Date();
+        return formatter.format(date);
+    }
+
+    public boolean isFileModified(){
+        return fileModified;
+    }
+
+    public boolean isFileDeleted() {
+        return fileDeleted;
+    }
+
+    public boolean fileExistingCheck()
+    {
+        file = new File(path);
+        if (!file.exists() || !file.isFile())
+            return true;
+        else
+            return false;
+    }
+
+
+
+    public void checkFile() {
+        double leatestFileSize = 0;
+        if(fileExistingCheck()){
+            fileDeleted = false;
+            leatestFileSize = (double) file.length();
+            System     .out.println(leatestFileSize);
+            if (leatestFileSize != originalFileSize){
+                fileModified = true;
+                notifyObservers();
+                originalFileSize = leatestFileSize;
+            }
+            else {
+                fileModified = false;
+            }
+        }
+        else {
+            fileDeleted = true;
+        }
+
+    }
+}
+
