@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Subject {
-        private List<Observer> observers;
+        private List<Observer> objectList;
 
         public Subject() {
-            observers = new ArrayList<Observer>();
+            objectList = new ArrayList<Observer>();
         }
 
         public void register(Observer obj) {
-            observers.add(obj);
+            objectList.add(obj);
         }
 
         public void unregister(Observer obj) {
-            observers.remove(obj);
+            objectList.remove(obj);
         }
 
-        public void notifyObservers() {
-            for (Observer var : observers) {
+        public void notifyObject() {
+            for (Observer var : objectList) {
                 var.update(this);
             }
         }

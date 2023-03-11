@@ -5,14 +5,14 @@ public class ObserveFile implements Observer {
     private FileChecker subject;
 
 
-    public ObserveFile(FileChecker s) {
-        this.subject = s;
+    public ObserveFile(FileChecker fileChecker) {
+        this.subject = fileChecker;
         this.subject.register(this);
     }
 
     @Override
-    public void update(Subject theChangedSubject) {
-        if (theChangedSubject == this.subject) {
+    public void update(Subject subject) {
+        if (subject == this.subject) {
             draw();
         }
     }
@@ -22,7 +22,6 @@ public class ObserveFile implements Observer {
         Date date = this.subject.getDate();
         System.out.println("File modified at "+date);
     }
-
 
 }
 
