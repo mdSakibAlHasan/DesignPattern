@@ -13,12 +13,12 @@ public class ObserveFile implements Observer {
     @Override
     public void update(Subject theChangedSubject) {
         if (theChangedSubject == this.subject) {
-            draw();
+            check();
         }
     }
 
 
-    public void draw() {
+    public void check() {
         Date date = this.subject.getDate();
         System.out.println("File modified at "+date);
     }
