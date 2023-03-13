@@ -37,7 +37,7 @@ public class FileChecker extends Subject {
 
     public void checkFile() {
         if (fileModifyCheck())
-            notifyObservers();
+            notifyObject();
     }
 }
 

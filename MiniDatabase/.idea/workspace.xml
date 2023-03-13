@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbf29761-d03b-47e9-9a87-474c6abe84df" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" afterDir="false" />
+>>>>>>> 9d5c6c42210bbae8cee03076053ab0fe6a32e6df
       <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

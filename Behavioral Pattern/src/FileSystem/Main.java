@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         FileChecker fileChecker = new FileChecker("test.txt");
         new ObserveFile(fileChecker);
-        new ObserveFile(fileChecker);
 
 
         while (true) {

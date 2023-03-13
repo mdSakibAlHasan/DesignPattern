@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f958b149-a789-4e4b-a560-b4b113a8b96d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/cli.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/cli.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/constants/errors.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/constants/errors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/DatabaseFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/DatabaseFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/RegistryFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/RegistryFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/src/constants/errors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/src/constants/errors.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2MR4S202738nqDrVgI6LrdUT0nd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CompositePatternBook.Main" />
+      <module name="Structural pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CompositePatternBook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f958b149-a789-4e4b-a560-b4b113a8b96d" name="Changes" comment="" />
+      <created>1677717056874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677717056874</updated>
+    </task>
+    <servers />
+  </component>
+</project>
