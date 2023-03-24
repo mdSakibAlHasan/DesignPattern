@@ -19,18 +19,20 @@ public class ConcreteTemplate extends EcommerceTemplate {
     void displayProduct() {
         System.out.println("All product in this e-commerce market:");
         for(Product product: mediator.productList){
-            System.out.println(product.name+" "+product.description+" "+product.price);
+            //System.out.println(product.name+" "+product.description+" "+product.price);
+            System.out.println(product);//product.toString();
         }
     }
 
     @Override
-    void purchaseProduct() {
+    boolean purchaseProduct() {
         do{
             System.out.print("Enter your purchase product name: ");
             String productName = sc.nextLine();
             product = mediator.getProduct(productName);
         }while (product == null);
 
+        return product.inventory > 0;
     }
 
     @Override
@@ -58,8 +60,9 @@ public class ConcreteTemplate extends EcommerceTemplate {
     }
 
     public void order(){
-        ecommerceProcess();
-        String str = mediator.orderConfirm(product,user,payment);
-        System.out.println(str);
+        if(ecommerceProcess()){
+            String str = mediator.orderConfirm(product,user,payment,1);
+            System.out.println(str);
+        }
     }
 }

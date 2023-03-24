@@ -21,11 +21,11 @@ public class Mediator {
         userList.add(user);
     }
 
-    public String orderConfirm(Product product, User user, Payment payment){
-       payment.doPayment();                                       //strategy pattern
+    public String orderConfirm(Product product, User user, Payment payment,double offerPrice){
+       payment.doPayment(product.price,offerPrice);                                       //strategy pattern
 
-        String str = user.name +" you confirm "+product.name+" and your price is "+product.price+
-                " through "+payment.toString();
+        String str = user.name +" you confirm "+product.name+"\n Your product price is "+product.price+"\n"+ payment.toString();
+        product.inventory--;
         return str;
     }
 

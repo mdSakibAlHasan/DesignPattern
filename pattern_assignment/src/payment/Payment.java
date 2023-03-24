@@ -1,5 +1,5 @@
 package payment;
 
 public interface Payment {
-    public void doPayment();
+    public void doPayment(double ammount, double offerPrice);
 }

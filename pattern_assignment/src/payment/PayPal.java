@@ -3,23 +3,27 @@ package payment;
 import java.util.Scanner;
 
 public class PayPal implements Payment{
-    private String email;
-    private String bilingAddress;
-    private int accountNumber;
+    private String bilingAddress,accountNumber;
+    private double ammount, offerPrice;
+
     Scanner sc = new Scanner(System.in);
-//    public PayPal(String email, String bilingAddress, int accountNumber){
-//        this.email = email;
-//        this.bilingAddress = bilingAddress;
-//        this.accountNumber = accountNumber;
-//    }
+
 
     @Override
-    public void doPayment() {
-        System.out.print("Enter your email: ");
-        String email = sc.nextLine();
+    public void doPayment(double ammount, double offerPrice) {
+        this.ammount = ammount;
+        this.offerPrice = offerPrice;
         System.out.print("Enter your billing address: ");
-        String billingAddress = sc.nextLine();
+        bilingAddress = sc.nextLine();
         System.out.print("Enter your account number: ");
-        String accountNumber = sc.nextLine();
+        accountNumber = sc.nextLine();
+    }
+
+    @Override
+    public String toString() {
+        return "\tPAY RECEIPT\nPayment method: PayPal\n Billing address: "+bilingAddress+
+                "\n Account number: "+accountNumber+
+                "\n Product price: "+ammount+"\n Offer price: "+offerPrice+
+                "\n Payable amount: "+(ammount-offerPrice);
     }
 }

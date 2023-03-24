@@ -12,15 +12,19 @@ public abstract class EcommerceTemplate {
 //    private User user;
 //    private Payment payment;
     abstract void displayProduct();
-    abstract void purchaseProduct();
+    abstract boolean purchaseProduct();
     abstract void manageUser();
     abstract void processPayment();
 
-    public final void ecommerceProcess() {
+    public final boolean ecommerceProcess() {
         displayProduct();
-        purchaseProduct();
+        if(!purchaseProduct()){
+            System.out.println("Your product sells out");
+            return false;
+        }
         manageUser();
         processPayment();
 
+        return true;
     }
 }
