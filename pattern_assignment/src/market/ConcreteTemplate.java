@@ -1,5 +1,6 @@
 package market;
 
+import make.Login;
 import payment.CreditCard;
 import payment.Cryptocurrency;
 import payment.PayPal;
@@ -18,11 +19,13 @@ public class ConcreteTemplate extends EcommerceTemplate {
     @Override
     void displayProduct() {
         System.out.println("All product in this e-commerce market:");
+        System.out.println("Product name\tPrice\tItems");
         for(Product product: mediator.productList){
             //System.out.println(product.name+" "+product.description+" "+product.price);
             System.out.println(product);//product.toString();
         }
     }
+
 
     @Override
     boolean purchaseProduct() {
@@ -34,6 +37,7 @@ public class ConcreteTemplate extends EcommerceTemplate {
 
         return product.inventory > 0;
     }
+
 
     @Override
     void manageUser() {
@@ -59,10 +63,25 @@ public class ConcreteTemplate extends EcommerceTemplate {
         //payment.doPayment();
     }
 
+    @Override
+    String makeReceipt() {
+       String RECIEPT = "\n\n" +
+                "╔═══════════════════════════════════════════════════╗\n" +
+                "║                 Purchase Receipt                  ║\n" +
+                "║                                                   ║\n" +
+                "║   Customer name:"+user.name+"                            ║\n" +
+                "║   Product name :"+product.name+"                             ║\n" +
+                "║   Pay amount   :"+product.price+"                            ║\n" +
+                "║   Pay method   :"+payment.toString()+"                       ║\n" +
+                "╚═══════════════════════════════════════════════════╝\n" ;
+
+        return RECIEPT;
+    }
+
     public void order(){
         if(ecommerceProcess()){
-            String str = mediator.orderConfirm(product,user,payment,1);
-            System.out.println(str);
+            mediator.orderConfirm(product,user,payment,1);
+            System.out.println(makeReceipt());
         }
     }
 }

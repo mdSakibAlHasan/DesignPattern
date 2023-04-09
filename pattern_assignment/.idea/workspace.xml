@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81f44c85-14a7-4a22-8817-a25739e29ee0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CodeSmell/src/workshop/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeSmell/src/workshop/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Creational Patterns/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Creational Patterns/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="market.Client" />
       <module name="pattern_assignment" />
@@ -53,9 +55,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Database" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="make.Database" />
+      <module name="pattern_assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="make.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Database" />
       </list>
     </recent_temporary>
   </component>

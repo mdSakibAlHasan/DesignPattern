@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f958b149-a789-4e4b-a560-b4b113a8b96d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/FileChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/ObserveFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/out/production/Behavioral Pattern/FileSystem/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/FileChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/ObserveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/src/FileSystem/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Behavioral Pattern/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/cli.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/cli.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/constants/errors.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/constants/errors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/DatabaseFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/DatabaseFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/RegistryFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/out/production/MiniDatabase/minidb/xmlParser/RegistryFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MiniDatabase/src/constants/errors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/src/constants/errors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CodeSmell/src/workshop/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CodeSmell/src/workshop/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Creational Patterns/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Creational Patterns/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniDatabase/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniDatabase/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompositePatternBook/CompositeShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompositePatternBook/CompositeShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/ConcreteTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/ConcreteTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/EcommerceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/EcommerceTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/Mediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/Mediator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/market/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/market/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/payment/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/payment/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/payment/Cryptocurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/payment/Cryptocurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pattern_assignment/src/payment/PayPal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pattern_assignment/src/payment/PayPal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +35,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompositePatternBook.Main" />

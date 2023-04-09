@@ -1,5 +1,7 @@
 package market;
 
+import make.Database;
+import make.Login;
 import payment.Payment;
 
 import java.util.ArrayList;
@@ -7,26 +9,24 @@ import java.util.ArrayList;
 public class Mediator {
     ArrayList<Product> productList;
     ArrayList<User> userList;
+    Database db = new Database();
 
     public Mediator(){
         productList = new ArrayList<>();
         userList = new ArrayList<>();
+        productList = db.getProductDB();
+        userList = db.getUser();
     }
 
     public void addProduct(Product product){
         productList.add(product);
+        db.storeProduct(productList);
     }
 
-    public void addUser(User user){
-        userList.add(user);
-    }
 
-    public String orderConfirm(Product product, User user, Payment payment,double offerPrice){
+    public void orderConfirm(Product product, User user, Payment payment,double offerPrice){
        payment.doPayment(product.price,offerPrice);                                       //strategy pattern
-
-        String str = user.name +" you confirm "+product.name+"\n Your product price is "+product.price+"\n"+ payment.toString();
         product.inventory--;
-        return str;
     }
 
     public Product getProduct(String productName){
@@ -34,7 +34,6 @@ public class Mediator {
             if(product.name.equals(productName))
                 return product;
         }
-
         return null;
     }
 
@@ -43,7 +42,6 @@ public class Mediator {
             if(user.email.equals(email) && user.password.equals(pass))
                 return user;
         }
-
         return null;
     }
 

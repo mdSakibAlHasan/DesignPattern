@@ -21,9 +21,6 @@ public class PayPal implements Payment{
 
     @Override
     public String toString() {
-        return "\tPAY RECEIPT\nPayment method: PayPal\n Billing address: "+bilingAddress+
-                "\n Account number: "+accountNumber+
-                "\n Product price: "+ammount+"\n Offer price: "+offerPrice+
-                "\n Payable amount: "+(ammount-offerPrice);
+        return "Paypal";
     }
 }

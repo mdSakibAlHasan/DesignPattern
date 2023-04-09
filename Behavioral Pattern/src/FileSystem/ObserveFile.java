@@ -11,15 +11,11 @@ public class ObserveFile implements Observer {
     }
 
     @Override
-<<<<<<< HEAD
     public void update(Subject theChangedSubject) {
         if (theChangedSubject == this.subject) {
             check();
-=======
-    public void update(Subject subject) {
-        if (subject == this.subject) {
-            draw();
->>>>>>> 9d5c6c42210bbae8cee03076053ab0fe6a32e6df
+            //draw();
+
         }
     }
 

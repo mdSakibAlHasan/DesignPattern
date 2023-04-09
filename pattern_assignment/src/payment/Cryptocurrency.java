@@ -21,9 +21,6 @@ public class Cryptocurrency implements Payment{
 
     @Override
     public String toString() {
-        return "\tPAY RECEIPT\nPayment method: Cryptocurrency\n Sending address: "+sendingAddress+
-                "\n Transaction ID: "+transctionID+
-                "\n Product price: "+ammount+"\n Offer price: "+offerPrice+
-                "\n Payable amount: "+(ammount-offerPrice);
+        return "Cryptocurency";
     }
 }

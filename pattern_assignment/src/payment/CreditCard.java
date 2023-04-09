@@ -19,8 +19,6 @@ public class CreditCard implements Payment{
 
     @Override
     public String toString() {
-        return "\tPAY RECEIPT\nPayment method: Credit Card\nCard number: "+cardNumber+
-                "\n Product price: "+ammount+"\n Offer price: "+offerPrice+
-                "\n Payable amount: "+(ammount-offerPrice);
+        return "CreditCard";
     }
 }

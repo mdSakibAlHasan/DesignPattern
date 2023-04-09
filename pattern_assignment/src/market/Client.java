@@ -1,36 +1,40 @@
 package market;
 
+import make.AccountCreate;
+import make.AdminControl;
+
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Client {
 
 
     public static void main(String[] args) throws IOException {
-        Product product[] = new Product[10];
-        product[0]= new Product("pen","Matador pen",5.0,null,5);
-        product[1]= new Product("khata","Basundhara",50.0,null,7);
-        product[2]= new Product("Keybord","habic",500.0,null,3);
-        product[3]= new Product("mobile","Iphone",20000.0,null,2);
-        product[4]= new Product("laptop","Dell",100000.0,null,1);
-        product[5]= new Product("mouse","A4 tec",900.0,null,7);
-        product[6]= new Product("keypad","Apple",150.0,null,5);
-        product[7]= new Product("SSD","samsung",4000.0,null,5);
-        product[8]= new Product("RAM","team",5000.0,null,0);
 
-        User user[] = new User[2];
-        user[0]= new User("Sakib","bsse1209","sakib","Dhaka");
-        user[1]= new User("Hasan","bsse1209@","sakib","Dhaka");
+        Constant constant = Constant.getInstance();
+        AccountCreate accountCreate = new AccountCreate();
+        AdminControl adminControl = new AdminControl();
+
         Mediator mediator = new Mediator();
-        for(int i=0;i<9;i++)
-            mediator.addProduct(product[i]);
-        for(int i=0;i<2;i++)
-            mediator.addUser(user[i]);
-
-
         ConcreteTemplate concreteTemplate = new ConcreteTemplate(mediator);
-        while(true){
-            concreteTemplate.order();
-            //System.out.println("Are you show again?");
+        Scanner sc = new Scanner(System.in);
+        int option;
+        boolean loop=true;
+        System.out.println(constant.HEADING);
+        while(loop){
+            System.out.println(constant.START);
+            option = sc.nextInt();
+            if(option == 1)
+                concreteTemplate.order();
+            else if (option == 2) {
+                accountCreate.create_account();
+            } else if (option == 3) {
+                adminControl.createProduct();
+            } else if (option == 4) {
+                loop = false;
+            }
+            else
+                System.out.println("Wrong input. Please enter correct input");
             System.in.read();
         }
 

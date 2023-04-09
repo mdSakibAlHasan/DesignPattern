@@ -1,10 +1,7 @@
 package market;
 
 public class User {
-    String name;
-    String email;
-    String password;
-    String address;
+    public String email, name, password, address;
 
     public User(String name, String email, String password, String address) {
         this.name = name;

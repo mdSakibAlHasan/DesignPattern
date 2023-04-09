@@ -1,11 +1,9 @@
 package market;
 
 public class Product {
-    String name;
-    String description;
-    double price;
-    String image;
-    int inventory;
+    public String name, description, image;
+    public double price;
+    public int inventory;
 
     public Product(String name, String description, double price, String image, int inventory) {
         this.name = name;
@@ -17,11 +15,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "\nProduct{\n" +
-                "\tname='" + name + '\n' +
-                "\tdescription='" + description + '\n' +
-                "\tprice=" + price +'\n'+
-                "\tinventory=" + inventory +
-                '}';
+        return  name + '\t' +
+                price +'\t'+
+                inventory +"\n"+
+                "Description: " + description + '\n';
     }
 }

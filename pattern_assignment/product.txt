@@ -1,0 +1,36 @@
+pen
+Matador pen
+5
+5.0
+khata
+Basundhara
+7
+50.0
+Keybord
+habic
+3
+500.0
+mobile
+Iphone
+2
+20000.0
+laptop
+Dell
+1
+100000.0
+mouse
+A4 tec
+7
+900.0
+keypad
+Apple
+5
+150.0
+SSD
+samsung
+5
+4000.0
+RAM
+team
+0
+5000.0
